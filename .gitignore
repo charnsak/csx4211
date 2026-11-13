@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Data produced by the lab pipelines
+labs/*/data/raw/
+labs/*/data/output/
+*.duckdb
+*.duckdb.wal
+
+# Secrets: never commit these
+.env
+*-key.json
+service-account*.json
+
+# macOS
+.DS_Store
