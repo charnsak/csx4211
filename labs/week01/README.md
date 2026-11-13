@@ -1,6 +1,6 @@
 # Lab 0 (Week 1): Your data engineering workbench
 
-**Saturday 7 November 2026 · 10:05–11:35 · Sit in pairs and help each other, but every student sets up their own codespace.**
+**Saturday 14 November 2026 t every student sets up their own codespace.**
 
 By the end of this lab you will have:
 
@@ -8,7 +8,7 @@ By the end of this lab you will have:
 2. run your first end-to-end data pipeline and traced it through the data engineering lifecycle, and
 3. redeemed your Google Cloud credits and protected them with a budget alert.
 
-At 11:35 you answer the **Week 1 lab check** (Google Form, linked on Google Classroom). It closes on **Monday 9 November at 23:59**. Several answers come from running the code, so do the steps instead of guessing.
+At 11:35 you answer the **Week 1 lab check** in MS Teams. It closes on **Monday 16 November at 23:59**. Several answers come from running the code, so do the steps instead of guessing.
 
 ---
 
@@ -94,61 +94,7 @@ Write one query for each question. You need the answers for the lab check.
 3. How many zones have `service_zone = 'Yellow Zone'`?
 4. Is `Zone` a unique key? Find the zone names that appear more than once. *(Hint: `GROUP BY Zone HAVING count(*) > 1`)*
 5. What is in the last two rows (`LocationID` 264 and 265)? Should they appear in a report about boroughs?
-
-### B4. Challenge (optional)
-
-Add a second report to the pipeline, `data/output/zones_per_service_zone.csv`, that counts zones per `service_zone`. Change only `transform()` and `serve()`, then run the pipeline again.
-
 ---
-
-## Part C: Google Cloud credits and a budget alert (about 25 minutes)
-
-We use Google Cloud from Week 10. We set it up today so that problems show up early, and so that cost control is a habit from day one.
-
-> **Coupon link not posted yet?** If the instructor has not posted the student coupon link on Google Classroom, skip Part C today and do it as soon as the link appears, at the latest before the Week 3 class.
-
-### C1. Request your coupon
-
-1. Open the **student coupon link** on Google Classroom.
-2. Enter your name and your `@au.edu` email address, then confirm the verification email.
-3. A second email arrives with your **coupon code**, worth up to US$50. Each student can request one coupon.
-
-### C2. Redeem the coupon
-
-1. In the coupon email, click **Redeem now** and sign in with the Google Account you will use for this course. If your `@au.edu` account cannot open https://console.cloud.google.com, use a personal Gmail account instead.
-2. Check the coupon code, read the terms, and click **Accept and continue**. The credit appears in a new Cloud Billing account named after the course.
-
-> **Never enter a credit card.** Education credits do not need one. If a page asks for card details, you are in the Free Trial sign-up, not on the credits page. Stop and ask for help.
-
-### C3. Create your course project
-
-1. In the console, open the project picker in the top bar and click **New project**.
-2. Project name: `csx4211-<your student ID>`.
-3. Billing account: choose the education billing account from C2, then click **Create**.
-
-### C4. Create a budget alert
-
-Open **Billing → Budgets & alerts → Create budget** and use these settings:
-
-| Setting | Value |
-|---|---|
-| Name | `csx4211-budget` |
-| Time range | **Custom range**, from 7 Nov 2026 to 31 Mar 2027 |
-| Projects | All projects |
-| Savings | **Untick all savings** (credits and discounts), so the budget tracks your usage *before* the education credits are applied |
-| Budget type and amount | Specified amount, **50** (USD) |
-| Threshold rules | 50%, 90% and 100% of *Actual* spend (the defaults) |
-| Notifications | Keep **Email alerts to billing admins and users** ticked |
-
-Click **Finish**. Remember two things:
-
-- A budget **only sends emails. It does not stop anything.** A cluster you forget to delete keeps costing money after the 100% email.
-- If you leave the savings ticked, the credits cancel out your costs, the budget sees almost $0, and you get **no warning** until the credits are gone.
-
-Coupons can be redeemed until **27 February 2027** (16 weeks after the course starts), and the credits last about a year, which is more than enough for this course.
-
----
-
 ## Before you leave
 
 - [ ] Answer the Week 1 lab check (Google Classroom). It closes Monday 9 November, 23:59.
