@@ -1,0 +1,27 @@
+{
+  "name": "CSX4211 Data Engineering",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:4": {},
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    }
+  },
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb"
+  },
+  "postCreateCommand": "pip3 install --user -r requirements.txt && git config --global pull.rebase false",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    },
+    "codespaces": {
+      "openFiles": [
+        "labs/week01/README.md"
+      ]
+    }
+  }
+}

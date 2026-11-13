@@ -1,0 +1,3 @@
+# Python packages for the CSX4211 labs (installed when the codespace is created).
+# Week 1
+duckdb==1.5.6
