@@ -1,14 +1,13 @@
 # Lab 0 (Week 1): Your data engineering workbench
 
-**Saturday 14 November 2026 t every student sets up their own codespace.**
+**Saturday 14 November 2026  every student sets up their own codespace.**
 
 By the end of this lab you will have:
 
 1. a cloud development environment that you will use all semester (GitHub Codespaces),
 2. run your first end-to-end data pipeline and traced it through the data engineering lifecycle, and
-3. redeemed your Google Cloud credits and protected them with a budget alert.
 
-At 11:35 you answer the **Week 1 lab check** in MS Teams. It closes on **Monday 16 November at 23:59**. Several answers come from running the code, so do the steps instead of guessing.
+Answer the **Week 1 lab check** in MS Teams. It closes on **Monday 16 November at 23:59**. Several answers come from running the code, so do the steps instead of guessing.
 
 ---
 
@@ -22,7 +21,7 @@ Sign in at https://github.com, or create a free personal account. Choose a usern
 
 ### A2. Create your codespace
 
-1. Open the course repository (link on Google Classroom).
+1. Open the course repository .
 2. Click **Code → Codespaces → Create codespace on main**. If you are asked for a machine type, choose **2-core**.
 3. The first start takes a few minutes because it installs Python, Docker and Java. When it finishes you see VS Code in your browser with this file open.
 
@@ -97,6 +96,6 @@ Write one query for each question. You need the answers for the lab check.
 ---
 ## Before you leave
 
-- [ ] Answer the Week 1 lab check (Google Classroom). It closes Monday 9 November, 23:59.
+- [ ] Answer the Week 1 lab check (MS Teams Assignment). It closes Monday 16 November, 23:59.
 - [ ] Stop your codespace.
 - [ ] Read for Week 2: *Fundamentals of Data Engineering* (Reis & Housley), chapters 1 and 2.
