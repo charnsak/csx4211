@@ -30,7 +30,7 @@ This downloads the lab folder for the new week. Open `labs/weekNN/README.md` and
 
 ## Rules of thumb
 
-- **Your codespace is your lab notebook.** Lab answers go into the weekly Google Form, so you never have to push lab code. (If you do commit, GitHub offers to create a fork of this repository for you.)
+- **Your codespace is your lab notebook.** Lab answers or source code submit go into the weekly MS Teams.)
 - **Stop your codespace when you finish** (https://github.com/codespaces → **…** → **Stop codespace**). Free personal accounts include 120 core-hours (about 60 hours on the default 2-core machine) and 15 GB-month of storage each month. A codespace stops by itself after 30 minutes without activity and is deleted after 30 days without use.
 - **Never commit secrets**: passwords, API keys, or Google Cloud key files.
 
